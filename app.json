@@ -1,0 +1,12 @@
+{
+  "name": "burger-king",
+  "displayName": "burger-king",
+  "expo": {
+    "name": "burger-king",
+    "slug": "burger-king",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
