@@ -7,7 +7,7 @@ import Animated, {
 import productsModel from "../mock";
 
 const cardWidth = Dimensions.get("window").width - 40;
-const imageSize = 300;
+const imageSize = 250;
 
 export default function Images({ x }) {
   return (
@@ -21,7 +21,7 @@ export default function Images({ x }) {
               index * cardWidth,
               (index + 1) * cardWidth,
             ],
-            [-cardWidth / 2, 0, cardWidth / 2]
+            [cardWidth / 2, 0, -cardWidth / 2]
           );
           const translateY = interpolate(
             x.value,
@@ -30,7 +30,7 @@ export default function Images({ x }) {
               index * cardWidth,
               (index + 1) * cardWidth,
             ],
-            [0, 50, 0]
+            [10, 40, 10]
           );
           const scale = interpolate(
             x.value,
@@ -39,7 +39,7 @@ export default function Images({ x }) {
               index * cardWidth,
               (index + 1) * cardWidth,
             ],
-            [0.3, 1, 0.3]
+            [0.5, 1, 0.5]
           );
           return {
             transform: [{ translateX }, { translateY }, { scale }],
