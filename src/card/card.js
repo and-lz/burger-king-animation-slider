@@ -2,7 +2,7 @@ import React from "react";
 import { Dimensions, StyleSheet, Text, View } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
-const CARD_WIDTH = Dimensions.get("window").width;
+const cardWidth = Dimensions.get("window").width - 40;
 
 export default function Card({ product }) {
   return (
@@ -21,7 +21,7 @@ export default function Card({ product }) {
 const styles = StyleSheet.create({
   card: {
     height: 500,
-    width: CARD_WIDTH - 40,
+    width: cardWidth,
     borderRadius: 5,
     padding: 20,
     justifyContent: "space-between",
